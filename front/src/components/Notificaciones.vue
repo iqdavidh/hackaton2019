@@ -2,22 +2,33 @@
 
     <div class="notificaciones">
 
-        <div style="text-align: center">
-            <img src="/logo.png" title="Logotipo"/>
-            <input type="text" style="float: right" v-model="textoBuscado">
+        <div style="display: flex">
+            <img src="../logo_safe.svg" title="Logotipo" style="height: 100px"/>
+            <div style="flex-grow: 1"></div>
+            <div class="form-group" style="width: 150px">
+                <input type="text"
+                       class="form-control"
+                       placeholder="Buscar en ubicación tipo de desastre"
+                       v-model="textoBuscado">
+            </div>
+
         </div>
 
-        <h3>Listado de notificaciones</h3>
 
 
-        <div>
+        <div class="contenidoMain">
 
             <div style="display: flex" class="headerCointainer">
-                <div>Mis Preferencias</div>
-                <div>Ver Todas</div>
+                <div @click="verPreferencias">Mis Preferencias</div>
+                <div @click="removerFiltro">Ver Todas</div>
             </div>
             <div v-for="item in listaNFiltro" v-bind:key="item.id" class="itemTablaN">
+                <div class="col1">
 
+                </div>
+                <div class="col2">
+
+                </div>
             </div>
         </div>
 
@@ -37,7 +48,14 @@
 				textoBuscado: ''
 			}
 		},
-		methods: {},
+		methods: {
+			removerFiltro() {
+
+			},
+			verPreferencias() {
+
+			}
+		},
 		mounted() {
 
 			//
@@ -61,11 +79,23 @@
 <style scoped>
 
     .headerCointainer {
-        display: flex; text-align: center;
+        display: flex;
+        text-align: center;
     }
 
-    .itemTablaN{
-        display: ;
+    .headerCointainer div{
+        flex-grow: 1;
+        color: #AAAAAA
+    }
+
+    .headerCointainer div .selected{
+        color : #9D83E5
+    }
+
+
+
+    .itemTablaN {
+        display: flex;
     }
 
 </style>
