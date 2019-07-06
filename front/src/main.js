@@ -2,7 +2,8 @@ import Vue from 'vue';
 import App from './App.vue';
 import VueRouter from 'vue-router';
 import Principal from './components/Principal.vue';
-// import Peliculas from "./components/Peliculas.vue";
+import Notificaciones from "./components/Notificaciones.vue";
+
 // import DetallePelicula from "./components/DetallePelicula";
 // import Nuevapelicula from "./components/Nuevapelicula";
 

@@ -1,0 +1,22 @@
+
+body {
+    background-color: #9C88E5;
+}
+
+body * {
+    font-family: 'Lato', sans-serif;
+
+
+
+}
+
+.contenidoMain {
+    background-color: #F5F4FC;
+    border-radius: 25px;
+    padding: 25px;
+    font-size: 16px;
+}
+
+.link-navegacion {
+    color: #9D83E5;
+}

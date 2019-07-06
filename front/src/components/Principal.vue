@@ -1,7 +1,11 @@
 <template>
 
     <div class="principal">
-        Funcionando
+        <button>
+            <router-link :to="{name:'listadoNotificacion'}">Listado Notificaciones</router-link>
+        </button>
+
+
     </div>
 
 
