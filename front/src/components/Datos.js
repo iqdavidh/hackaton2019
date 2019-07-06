@@ -66,10 +66,6 @@ let listaDesastre=[
 	id: "6"
 	},
 
-	
-
-
-
 ];
 
 	
