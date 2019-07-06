@@ -8,7 +8,7 @@ import Principal from './components/Principal.vue';
 
 const routes=[
   { path:'/' , name:'home', component: Principal},
-  // { path:'/peliculas' , name:'listadoPeliculas', component: Peliculas},
+  { path:'/notificacion' , name:'listadoNotificacion', component: Notificaciones},
   // { path:'/peliculas/:id' , name:'detallePelicula', component: DetallePelicula, props:true},
   // { path:'/nuevapeli' , name:'nuevapeli', component: Nuevapelicula},
 ];
